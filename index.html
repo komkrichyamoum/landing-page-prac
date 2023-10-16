@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <section class="flex justify-between m-5">
+            <img src="/image/header-logo.png" alt="" class="w-1/6 h-auto">
+            <div class="relative flex justify-center items-center">
+                <input type="text" id="input"
+                    class="border border-2 border-orange-400 pl-10 py-2 w-80 focus:outline-none focus:border-blue-500"
+                    placeholder="search">
+                <i class="absolute inset-y-0 left-0 pb-1 pl-2 flex items-center fas fa-search text-gray-400"></i>
+            </div>
+            <div class="flex gap-6 ">
+                <div class="block text-center">
+                    <i class="fa-regular fa-heart fa-1x"></i>
+                    <h1>Wishlist</h1>
+                </div>
+                <div class="block text-center">
+                    <i class="fa-solid fa-code-compare fa-1x"></i>
+                    <h1>Compare</h1>
+                </div>
+                <div class="block text-center">
+                    <i class="fa-solid fa-cart-shopping fa-1x"></i>
+                    <h1>Card</h1>
+                </div>
+            </div>
+        </section>
+        <!-- Navigation bar -->
+
+        <nav class="bg-stone-950 container mx-auto">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+                        <button type="button"
+                            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open main menu</span>
+
+                            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+
+                            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+                        <div class="hidden sm:ml-6 sm:block">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                    aria-current="page">Home</a>
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Shope</a>
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Vendor</a>
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Blog</a>
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Page</a>
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Element</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <button type="button"
+                            class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                            <span class="absolute -inset-1.5"></span>
+                            <span class="sr-only">View notifications</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                            </svg>
+                        </button>
+
+                        <!-- Profile dropdown -->
+
+
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                aria-current="page">Dashboard</a>
+            <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+            <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+            <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+        </div>
+    </div>
+    </nav>
+    </div>
+
+    <!-- content grid -->
+    <section class="grid grid-cols-3 container mx-auto mt-5 ">
+        <div class="block flex-col col-span-1 bg-gray-200 p-5 space-y-3 text-gray-500">
+            <div class="flex justify-start items-center ">
+                <i class="fa-solid fa-shirt px-2"></i>
+                <a href="">
+                    <h3>Fashion</h3>
+                </a>
+                <i class="fa-solid fa-arrow-right ml-auto"></i>
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+
+            <div class="flex items-center">
+                <i class="fa-solid fa-house px-2"></i>
+                <a href="">
+                    <h3>Home & Garden</h3>
+                </a>
+                <i class="fa-solid fa-arrow-right ml-auto"></i>
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-computer px-2"></i>
+                <a href="">
+                    <h3>Electronics</h3>
+                </a>
+                <i class="fa-solid fa-arrow-right ml-auto"></i>
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-chair px-2"></i>
+                <a href="">
+                    <h3>Furniture</h3>
+                </a>
+                <i class="fa-solid fa-arrow-right ml-auto"></i>
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-notes-medical px-2"></i>
+                <a href="">
+                    <h3>Healthy & Beauty</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-gift px-2"></i>
+                <a href="">
+                    <h3>Gift Ideas</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-gift px-2"></i>
+                <a href="">
+                    <h3>Toy & Games</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-gift px-2"></i>
+                <a href="">
+                    <h3>Cookind</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-gift px-2"></i>
+                <a href="">
+                    <h3>Smart Phones</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-gift px-2"></i>
+                <a href="">
+                    <h3>Cameras & Photo</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <i class="fa-solid fa-gift px-2"></i>
+                <a href="">
+                    <h3>Accessories</h3>
+                </a>
+
+            </div>
+            <hr class="border-b-1 border-gray-300 my-4">
+            <div class="flex items-center">
+                <a href="">
+                    <h3>VIEW ALL CATEGORIES</h3>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- grid2 -->
+        <!-- carousel -->
+        <div class="col-span-2 p-3">
+            <div class="slideshow-container">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/16/man-1839500_1280.jpg"
+                            style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/23/14/50/apple-1853337_1280.jpg"
+                            style="width:100%">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/15/08/04/strawberry-1330459_1280.jpg"
+                            style="width:100%">
+
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                </div>
+                <br>
+            </div>
+    </section>
+    <!-- grid3 -->
+    <div class="grid grid-cols-3 container mx-auto mt-6 gap-6">
+        <div class="">
+            <img class="h-60 rounded-xl w-full" src="https://cdn.pixabay.com/photo/2016/10/09/08/32/digital-marketing-1725340_1280.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="h-60 rounded-xl w-full" src="https://cdn.pixabay.com/photo/2020/04/02/05/19/beauty-4993471_1280.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="h-60 rounded-xl w-full" src="https://cdn.pixabay.com/photo/2015/12/09/18/55/disc-1085276_1280.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="grid grid-cols-4 container mx-auto mt-6 border border-gray-300 h-30 p-4 rounded-xl">
+        <div class="flex justify-center items-center gap-4">
+            <i class="fa-solid fa-truck-fast fa-2x"></i>
+            <div>
+                <h2 class="text-lg">Free Shipping & Returns</h2>
+                <p class="text-gray-400">For all orders over</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-4">
+            <i class="fa-solid fa-bag-shopping fa-2x"></i>
+            <div>
+                <h2 class="text-lg">Secure Payment</h2>
+                <p class="text-gray-400">We ensure secure payment</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-4">
+            <i class="fa-solid fa-money-check-dollar fa-2x"></i>
+            <div>
+                <h2 class="text-lg">Money Back Guarantee</h2>
+                <p class="text-gray-400">Any back within 30 days</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center gap-4">
+            <i class="fa-brands fa-rocketchat fa-2x"></i>
+            <div>
+                <h2 class="text-lg">Customers Support</h2>
+                <p class="text-gray-400">Call or email</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular bland -->
+    <h1 class="text-xl font-semibold container mx-auto mt-20">Most Popular Brand</h1>
+    <div class="grid grid-cols-6 gap-3 container mx-auto mt-5">
+        <div>
+            <img class="rounded-full w-max  border-2 h-fit"
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/87cd0b80e0434c758b15ae9801598eb2_9366/adidas_4DFWD_2_GX9250_01_standard.jpg"
+                alt="">
+            <h1 class="text-xl font-semibold text-center mt-6">ADIDAS</h1>
+        </div>
+
+        <div>
+            <img class="rounded-full  bg-cover w-max border-2 h-fit"
+                src="https://i.pinimg.com/736x/b2/b6/e9/b2b6e9c64ce0b5cb321bc88f920047c8.jpg" alt="">
+            <h1 class="text-xl font-semibold text-center mt-6">NIKE</h1>
+        </div>
+
+        <div>
+            <img class="rounded-full bg-cover w-max border-2 h-fit"
+                src="https://smartdigitallockreddot.sg/wp-content/uploads/2023/03/Samsung-Logo-1-1.jpg" alt="">
+            <h1 class="text-xl font-semibold text-center mt-6">SAMSUNG</h1>
+        </div>
+
+        <div>
+            <img class="rounded-full w-max border-2 h-fit"
+                src="https://www.psegameshop.com/wp-content/uploads/2020/10/Xbox-Series-X-1-1.jpg" alt="">
+            <h1 class="text-xl font-semibold text-center mt-6">XBOX</h1>
+        </div>
+
+        <div>
+            <img class="rounded-full w-max border-2 h-fit"
+                src="https://media-cdn.bnn.in.th/100073/Xiaomi-Smartphone-Mi11-(8%2B256)-Midnight-Gray-1.1-square_medium.jpg"
+                alt="">
+            <h1 class="text-xl font-semibold text-center mt-6">XIAOMI</h1>
+        </div>
+
+        <div>
+            <img class="rounded-full w-max border-2 h-fit"
+                src="https://resellersreup.com/cdn/shop/files/PhotoRoom_20230522_182008.jpg?v=1684801647" alt="">
+            <h1 class="text-xl font-semibold text-center mt-6">APPLE</h1>
+        </div>
+    </div>
+    <!-- section card -->
+    <div class="flex items-center justify-center  mx-auto mt-10 p-10 gap-10 ">
+        <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div
+                class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                <img src="https://cdn.pixabay.com/photo/2017/09/01/21/53/sunglasses-2705642_1280.jpg" alt="">
+            </div>
+            <div class="p-6">
+                <h5
+                    class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Fashion
+                </h5>
+                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                </p>
+            </div>
+            <div class="p-6 pt-0">
+                <button data-ripple-light="true" type="button"
+                    class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                    Read More
+                </button>
+            </div>
+        </div>
+
+        <!-- card2 -->
+        <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div
+                class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                <img src="https://cdn.pixabay.com/photo/2018/01/25/08/14/beverages-3105631_1280.jpg" alt="">
+            </div>
+            <div class="p-6">
+                <h5
+                    class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Shopping
+                </h5>
+                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                </p>
+            </div>
+            <div class="p-6 pt-0">
+                <button data-ripple-light="true" type="button"
+                    class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                    Read More
+                </button>
+            </div>
+        </div>
+        <!-- card3 -->
+        <div class="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div
+                class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                <img src="https://cdn.pixabay.com/photo/2014/10/14/20/24/soccer-488700_1280.jpg" alt="">
+            </div>
+            <div class="p-6">
+                <h5
+                    class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                    Sport
+                </h5>
+                <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                </p>
+            </div>
+            <div class="p-6 pt-0">
+                <button data-ripple-light="true" type="button"
+                    class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                    Read More
+                </button>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="bg-stone-950 w-full h-80 mt-20 flex flex-col justify-center items-center">
+            <div class="flex  relative items-center justify-center ">
+                <div class="rounded-xl overflow-hidden relative text-center p-4 group items-center flex flex-col max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl">
+                  <div class="text-gray-500 group-hover:scale-105 transition-all">
+                    <svg class="w-16 h-16" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                  </div>
+                  <div class="group-hover:pb-10 transition-all duration-500 delay-200">
+                    <h1 class="font-semibold text-gray-700">Komkrich</h1>
+                    <p class="text-gray-500 text-sm">@Star Q indy</p>
+                  </div>
+                  <div class="flex items-center transition-all duration-500 delay-200 group-hover:bottom-3 -bottom-full absolute gap-2 justify-evenly w-full">
+                    <div class="flex gap-3 text-2xl bg-gray-700 text-white p-1 hover:p-2 transition-all duration-500 delay-200 rounded-full shadow-sm">
+                      <a class="hover:scale-110 transition-all duration-500 delay-200">
+                        <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 1024 1024">
+                          <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0138.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
+                        </svg>
+                      </a>
+                      <a class="hover:scale-110 transition-all duration-500 delay-200">
+                        <svg width="1em" height="1em" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                          <path d="M22 6l-10 7L2 6"></path>
+                        </svg>
+                      </a>
+                      <a class="hover:scale-110 transition-all duration-500 delay-200">
+                        <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 960 1000">
+                          <path d="M480 20c133.333 0 246.667 46.667 340 140s140 206.667 140 340c0 132-46.667 245-140 339S613.333 980 480 980c-132 0-245-47-339-141S0 632 0 500c0-133.333 47-246.667 141-340S348 20 480 20M362 698V386h-96v312h96m-48-352c34.667 0 52-16 52-48s-17.333-48-52-48c-14.667 0-27 4.667-37 14s-15 20.667-15 34c0 32 17.333 48 52 48m404 352V514c0-44-10.333-77.667-31-101s-47.667-35-81-35c-44 0-76 16.667-96 50h-2l-6-42h-84c1.333 18.667 2 52 2 100v212h98V518c0-12 1.333-20 4-24 8-25.333 24.667-38 50-38 32 0 48 22.667 48 68v174h98"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">&copy; Landing page Practice</p>
+            <p class="text-gray-300">Komkrich.yamoum@gmail.com</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
